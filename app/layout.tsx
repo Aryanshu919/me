@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Indie_Flower,
+  Josefin_Sans,
+} from "next/font/google";
 import "./globals.css";
+import Navabar from "./components/Navabar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -9,6 +15,11 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const JosefinSans = Josefin_Sans({
+  variable: "--font-josefin-sans",
   subsets: ["latin"],
 });
 
@@ -25,9 +36,16 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${JosefinSans.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <div className="min-h-screen bg-background ">
+          <div className="max-w-[850px] mx-auto px-4 sm:px-6 lg:px-8">
+            <Navabar/>
+            {children}
+          </div>
+        </div>
+      </body>
     </html>
   );
 }
