@@ -39,7 +39,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${JosefinSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <div className="min-h-screen bg-background ">
+        <div className="min-h-screen bg-background">
           <div className="max-w-[850px] mx-auto px-4 sm:px-6 lg:px-8">
             <Navabar/>
             {children}
