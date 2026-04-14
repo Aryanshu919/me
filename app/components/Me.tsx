@@ -1,13 +1,14 @@
 import Link from "next/link";
 import React from "react";
+import { json } from "stream/consumers";
 
 const Me = () => {
   return (
     <div className="flex flex-col mt-8">
-      <h1 className="font-josefin-sans text-white text-4xl mb-5 tracking-wide">
+      <h1 className="font-bricolage-grotesque text-white text-4xl mb-5 tracking-wide">
         Aryan Kumar
       </h1>
-      <p className="text-muted font-sans text-base/6 font-medium ">
+      <p className="text-muted font-mono text-sm font-medium ">
         From India. Junior Developer Advocate at Prisma. Creator of Better T
         Stack, powering 10k+ project scaffolds per month. I love open source,
         TypeScript, and everything AI.

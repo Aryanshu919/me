@@ -3,13 +3,12 @@ import React from "react";
 const Experience = () => {
   return (
     <div className="mt-6">
-      <h1 className="font-josefin-sans text-white text-3xl mb-5 tracking-wide">
+      <h1 className="font-bricolage-grotesque text-white text-3xl mb-5 tracking-wide">
         Experience
       </h1>
-
       <div className="">
         <div className="flex justify-between items-center">
-          <h1 className="text-lg font-medium">
+          <h1 className="text-lg font-medium font-bricolage-grotesque">
             Admistay{" "}
             <span className="text-vague-keyword text-xs ">
               {" "}
@@ -22,7 +21,7 @@ const Experience = () => {
           </span>
         </div>
         <div>
-          <ol className="list-disc pl-5 text-muted space-y-2 text-base">
+          <ol className="list-disc pl-5 text-muted space-y-2 text-sm font-mono">
             <li>
               Designed and implemented a secure email-based login system with
               OTP verification, along with a “Continue with Google (Gmail)”
@@ -43,7 +42,7 @@ const Experience = () => {
       </div>
 
       <div className="flex justify-between items-center mt-5">
-        <h1 className="text-lg font-medium">
+        <h1 className="font-bricolage-grotesque text-lg font-medium">
           LesOrc{" "}
           <span className="text-vague-keyword text-xs ">
             {" "}
@@ -56,7 +55,7 @@ const Experience = () => {
         </span>
       </div>
       <div>
-        <ol className="list-disc pl-5 text-muted space-y-2 text-base">
+        <ol className="list-disc pl-5 text-muted space-y-2 text-sm font-mono">
           <li>
             Designed and developed full-stack web applications using modern
             frameworks (React, Node.js, Express.js, Postgresql, prisma),
